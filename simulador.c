@@ -9,15 +9,10 @@
 #define TBLOCO 5
 #define TCELULA 8
 
-/* Grupos 5: IVAIR PUERARI, JEFERSON AUGUSTO SCHEIN
-Politica de Mapeamento: Totalmente associativo
-Politica de Troca: Aleatório
-Politica de escrita:  Write - Through */ 
-
 typedef struct MemCache{
-	int valBit;  		// se 0 sem informacao, 1 informacao presente
-	int bloco; 		// endereco do comeco do bloco da memorio
-	int blocoBin[5];	// endereco em binario 	
+	int valBit;  		
+	int bloco; 		
+	int blocoBin[5];	 	
 	int info[8];
 	
 }MemCache;
